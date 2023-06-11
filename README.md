@@ -1,4 +1,4 @@
-# Jamf Unmigration
+# Jamf Connect Unmigration
 
 ### General
 
