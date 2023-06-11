@@ -5,15 +5,14 @@
 ####################################################
 
 #variables
-homefolder=$(dscl . read $HOME NFSHomeDirectory | awk '{print $2}')
 alias=$(dscl . read $HOME RecordName | awk '{ print substr($0, index($0,$2)) }')
 
 #Unmigrating jamf connect from local user
-dscl . delete $homefolder RecordName $alias
-dscl . delete $homefolder dsAttrTypeStandard:NetworkUser
-dscl . delete $homefolder dsAttrTypeStandard:OIDCProvider
-dscl . delete $homefolder dsAttrTypeStandard:OktaUser
-dscl . delete $homefolder dsAttrTypeStandard:AzureUser
+dscl . delete $HOME RecordName $alias
+dscl . delete $HOME dsAttrTypeStandard:NetworkUser
+dscl . delete $HOME dsAttrTypeStandard:OIDCProvider
+dscl . delete $HOME dsAttrTypeStandard:OktaUser
+dscl . delete $HOME dsAttrTypeStandard:AzureUser
 
 echo "Jamf connect unmigrated successfully"
 
