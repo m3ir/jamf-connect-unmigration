@@ -4,7 +4,7 @@
 ####written by Meir Elimelech meir@wediggit.co.il###
 ####################################################
 
-#variables
+#get current user alias
 alias=$(dscl . read $HOME RecordName | awk '{ print substr($0, index($0,$2)) }')
 
 #Unmigrating jamf connect from local user
