@@ -1,11 +1,12 @@
-# Jamf Connect Unmigration
+# Jamf Connect "Un-migration"
 
 ### General
 
-jamfconnect_ unmigrating.sh unmigrate Jamf Connect completely from a current local user
+jamfconnect_unmigrating.sh un-migrates Jamf Connect completely from a current local user
 
 by Meir Elimelech
 
 ## Usage
 
-the script can be user locally as Sudoer or alliteratively run via Jamf Pro Policy
+The script can be used locally on a machine with admin credentials using sudo 
+or alternatively, be run via Jamf Pro using a Policy (in  a script or a file command)
